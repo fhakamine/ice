@@ -8,7 +8,7 @@
 ## Code Snippet 1: To add a custom logo
 
 ```javascript
-var oktaSignIn = new OktaSignIn({baseUrl: orgUrl, logo: 'ideLogo.png'});
+var oktaSignIn = new OktaSignIn({baseUrl: orgUrl, logo: 'iceLogo.png'});
 ```
 
 ## Code Snippet 2: To add a custom background
