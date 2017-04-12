@@ -7,11 +7,15 @@
 
 ## Code Snippet 1: To add a custom logo
 
+To replace the original `oktaSignIn` var declaration.
+
 ```javascript
 var oktaSignIn = new OktaSignIn({baseUrl: orgUrl, logo: 'iceLogo.png'});
 ```
 
 ## Code Snippet 2: To add a custom background
+
+To be placed before `</head>`
 
 ```html
 <style>
