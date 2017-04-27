@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://developer.okta.com/use_cases/authentication/ -->
+<html class="no-js wf-proximanova-n7-active wf-proximanova-n1-active wf-proximanova-n6-active wf-proximanova-n4-active wf-proximanova-n3-active wf-museosans-n1-active wf-museosans-i1-active wf-museosans-n3-active wf-museosans-i3-active wf-museosans-n5-active wf-museosans-i5-active wf-museosans-n7-active wf-museosans-i7-active wf-active" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" async="" src="./default_files/insight.min.js"></script><script async="" src="./default_files/fbevents.js"></script><script src="./default_files/bat.js" async=""></script><script type="text/javascript" async="" src="./default_files/conversion_async.js"></script><script type="text/javascript" async="" src="./default_files/analytics.js"></script><script src="./default_files/9333.js" async="" type="text/javascript"></script><script async="" src="./default_files/gtm.js"></script><script async="" src="./default_files/analytics.js"></script><script src="./default_files/jff5neq.js">
+  </script>
+  <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-museo-sans{font-family:"museo-sans",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/6d80a1/00000000000000003b9aefb8/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/6d80a1/00000000000000003b9aefb8/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/6d80a1/00000000000000003b9aefb8/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-proxima-nova-n1;src:url(https://use.typekit.net/af/b017d1/00000000000000003b9aefe5/27/l?subset_id=2&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/b017d1/00000000000000003b9aefe5/27/d?subset_id=2&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/b017d1/00000000000000003b9aefe5/27/a?subset_id=2&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:tk-proxima-nova-n6;src:url(https://use.typekit.net/af/e22d4a/00000000000000003b9aefc2/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/e22d4a/00000000000000003b9aefc2/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/e22d4a/00000000000000003b9aefc2/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/936fa1/00000000000000003b9aefc0/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/936fa1/00000000000000003b9aefc0/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/936fa1/00000000000000003b9aefc0/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-proxima-nova-n3;src:url(https://use.typekit.net/af/8a67b6/00000000000000003b9aefbc/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/8a67b6/00000000000000003b9aefbc/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/8a67b6/00000000000000003b9aefbc/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:tk-museo-sans-n1;src:url(https://use.typekit.net/af/3386c8/00000000000000000000e800/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/3386c8/00000000000000000000e800/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/3386c8/00000000000000000000e800/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:tk-museo-sans-i1;src:url(https://use.typekit.net/af/2c24f1/00000000000000000000e801/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("woff2"),url(https://use.typekit.net/af/2c24f1/00000000000000000000e801/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("woff"),url(https://use.typekit.net/af/2c24f1/00000000000000000000e801/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("opentype");font-weight:100;font-style:italic;}@font-face{font-family:tk-museo-sans-n3;src:url(https://use.typekit.net/af/736167/00000000000000000000e7fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/736167/00000000000000000000e7fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/736167/00000000000000000000e7fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:tk-museo-sans-i3;src:url(https://use.typekit.net/af/afd626/00000000000000000000e802/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/afd626/00000000000000000000e802/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/afd626/00000000000000000000e802/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:tk-museo-sans-n5;src:url(https://use.typekit.net/af/04c976/00000000000000000000e803/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/04c976/00000000000000000000e803/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/04c976/00000000000000000000e803/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:tk-museo-sans-i5;src:url(https://use.typekit.net/af/d4486d/00000000000000000000e804/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("woff2"),url(https://use.typekit.net/af/d4486d/00000000000000000000e804/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("woff"),url(https://use.typekit.net/af/d4486d/00000000000000000000e804/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("opentype");font-weight:500;font-style:italic;}@font-face{font-family:tk-museo-sans-n7;src:url(https://use.typekit.net/af/585dc6/00000000000000000000e805/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/585dc6/00000000000000000000e805/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/585dc6/00000000000000000000e805/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-museo-sans-i7;src:url(https://use.typekit.net/af/f4329b/00000000000000000000e806/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/f4329b/00000000000000000000e806/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/f4329b/00000000000000000000e806/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}</style><script>
+  try{Typekit.load({ async: true });}catch(e){}
+  </script>
+
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://developer.okta.com/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="./default_files/animate.css">
+  <link rel="stylesheet" type="text/css" media="all" href="./default_files/okta.css">
+  <title>{{title}} | Okta Developer</title>
+  <meta name="description" content="Overview of the various ways Okta can be used to authenticate users depending on your needs.">
+  <link rel="canonical" href="http://developer.okta.com/use_cases/authentication/index">
+  <link rel="alternate" type="application/rss+xml" title="Okta Developer" href="http://developer.okta.com/feed.xml"><!-- GA -->
+
+  <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-15777010-3', 'auto');
+        ga('send', 'pageview');
+  </script><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/6d80a1/00000000000000003b9aefb8/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/6d80a1/00000000000000003b9aefb8/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/6d80a1/00000000000000003b9aefb8/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/b017d1/00000000000000003b9aefe5/27/l?subset_id=2&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/b017d1/00000000000000003b9aefe5/27/d?subset_id=2&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/b017d1/00000000000000003b9aefe5/27/a?subset_id=2&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/e22d4a/00000000000000003b9aefc2/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/e22d4a/00000000000000003b9aefc2/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/e22d4a/00000000000000003b9aefc2/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/936fa1/00000000000000003b9aefc0/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/936fa1/00000000000000003b9aefc0/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/936fa1/00000000000000003b9aefc0/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/8a67b6/00000000000000003b9aefbc/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/8a67b6/00000000000000003b9aefbc/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/8a67b6/00000000000000003b9aefbc/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/3386c8/00000000000000000000e800/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/3386c8/00000000000000000000e800/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/3386c8/00000000000000000000e800/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/2c24f1/00000000000000000000e801/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("woff2"),url(https://use.typekit.net/af/2c24f1/00000000000000000000e801/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("woff"),url(https://use.typekit.net/af/2c24f1/00000000000000000000e801/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("opentype");font-weight:100;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/736167/00000000000000000000e7fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/736167/00000000000000000000e7fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/736167/00000000000000000000e7fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/afd626/00000000000000000000e802/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/afd626/00000000000000000000e802/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/afd626/00000000000000000000e802/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/04c976/00000000000000000000e803/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/04c976/00000000000000000000e803/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/04c976/00000000000000000000e803/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/d4486d/00000000000000000000e804/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("woff2"),url(https://use.typekit.net/af/d4486d/00000000000000000000e804/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("woff"),url(https://use.typekit.net/af/d4486d/00000000000000000000e804/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("opentype");font-weight:500;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/585dc6/00000000000000000000e805/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/585dc6/00000000000000000000e805/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/585dc6/00000000000000000000e805/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/f4329b/00000000000000000000e806/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/f4329b/00000000000000000000e806/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/f4329b/00000000000000000000e806/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}</style>
+</head>
+
+<body>
+  <div class="Page">
+    <!-- START Header -->
+    <header id="header">
+      <div class="Wrap">
+        <h1 class="logo"><a href="http://developer.okta.com/">Okta</a></h1><!-- START Primary Nav -->
+        <nav>
+          <div id="top-nav">
+            <ul>
+              <li>
+                <a href="http://developer.okta.com/product/">Product</a>
+              </li>
+              <li>
+                <a href="http://developer.okta.com/documentation/">Documentation</a>
+              </li>
+              <li>
+                <a href="http://developer.okta.com/code/">Code</a>
+              </li>
+              <li class="has-dropdown">
+                <a href="http://developer.okta.com/use_cases/authentication/#">Support</a>
+                <div class="dropdown-window">
+                  <p class="stack-overflow">Post your question on <a href="http://stackoverflow.com/search?q=okta" target="_blank">Stack Overflow</a></p>
+                  <p class="email">Email us:<br>
+                  <a href="mailto:developers@okta.com">developers@okta.com</a></p>
+                  <p class="tel">Call us:<br>
+                  <a href="tel:18887227871">1 (888) 722-7871</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav><!-- END Primary Nav -->
+      </div>
+    </header><!-- Google Tag Manager -->
+    <noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-TJ45R6" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TJ45R6');
+    </script> <!-- End Google Tag Manager -->
+     <!-- END Header -->
+      <!-- START Page Content -->
+      <div class="PageContent-main" id="docs-body">
+        {{content}}
+      </div>
+    <!-- START Footer -->
+    <footer class="footer">
+      <div class="Wrap">
+        <ul>
+          <li>
+            <a href="http://www.okta.com/" target="_blank">Okta.com</a>
+          </li>
+          <li>
+            <a href="http://developer.okta.com/blog">Blog</a>
+          </li>
+          <li>
+            <a href="http://developer.okta.com/docs/platform-release-notes/platform-release-notes.html">Platform Release Notes</a>
+          </li>
+          <li>
+            <a href="http://developer.okta.com/terms/">Terms &amp; Conditions</a>
+          </li>
+          <li>
+            <a href="http://developer.okta.com/3rd_party_notices/">3rd Party Notices</a>
+          </li>
+          <li>
+            <a href="http://developer.okta.com/privacy/">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="http://okta.com/developer/contact/">Contact Sales</a>
+          </li>
+          <li>
+            <a href="mailto:developers@okta.com">Contact Support</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a class="icon" href="http://github.com/oktadeveloper" target="_blank"><i class="fa fa-github"></i></a>
+          </li>
+          <li>
+            <a class="icon" href="http://twitter.com/okta" target="_blank"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a class="icon" href="http://stackoverflow.com/search?q=okta" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          <li>
+            <a class="icon" href="http://feeds.feedburner.com/OktaBlog" target="_blank"><i class="fa fa-rss"></i></a>
+          </li><!-- <li><a class="icon" href="http://community.okta.com" target="_blank"><i class="fa fa-comments"></i></a></li> -->
+        </ul>
+      </div>
+    </footer>
+    <script src="./default_files/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" defer="defer" src="./default_files/docs.js">
+    </script>
+    <script src="./default_files/master.js">
+    </script> <!-- Remarketing tag -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 1006913831;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <div style="display:none;">
+      <script type="text/javascript" src="./default_files/conversion.js">
+      </script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./default_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
+    </div><noscript>
+    &lt;div style="display:inline;"&gt;&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1006913831/?value=0&amp;amp;guid=ON&amp;amp;script=0"&gt;&lt;/div&gt;</noscript> <!-- End Remarketing tag -->
+     <!-- Crazy Egg Tracking -->
+    <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0021/9333.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script> <!-- End Crazy Egg Tracking -->
+
+     <!-- END Footer -->
+  </div>
+
+
+<script type="text/javascript" id="">(function(b,c,e,g,d){var f,a;b[d]=b[d]||[];f=function(){var a={ti:"5175358"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};a=c.createElement(e);a.src=g;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(f(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript>&lt;img src="//bat.bing.com/action/0?ti=5175358&amp;amp;Ver=2" height="0" width="0" style="display:none; visibility: hidden;"&gt;</noscript><div style="display: none; visibility: hidden;"><script type="text/javascript" id="gtm-scroll-tracking">(function(b,e,a){function l(){if(!b.querySelector||!b.body.getBoundingClientRect)return!1;a.dataLayerName=a.dataLayerName||"dataLayer";a.distances=a.distances||{};m();k(e,"scroll",v(m,500))}function q(f,g,c,d,a){var b;for(b=0;b<g.length;b++){var h=parseInt(g[b],10),e="%"!==c?h+a:h/100*d+a,h=h+c;e<=d+a&&(f[h]=e)}return f}function r(f,a){var c=parseInt(f,10),d=a/c,b=[];for(i=1;i<d+1;i++)b.push(i*c);return b}function m(){var f=t(a.bottom),g=t(a.top),c=b.body,d=b.documentElement,c=Math.max(c.scrollHeight,
+c.offsetHeight,d.clientHeight,d.scrollHeight,d.offsetHeight);g&&(c-=g);f&&(c=f-g);var f=c-5,g=g||0,c={},d=[],n=[];if(a.distances.percentages&&(a.distances.percentages.each&&(d=d.concat(a.distances.percentages.each)),a.distances.percentages.every))var p=r(a.distances.percentages.every,100),d=d.concat(p);a.distances.pixels&&(a.distances.pixels.each&&(n=n.concat(a.distances.pixels.each)),a.distances.pixels.every&&(p=r(a.distances.pixels.every,f),n=n.concat(p)));var c=q(c,d,"%",f,g),f=c=q(c,n,"px",f,
+g),g=void 0!==e.pageXOffset,c="CSS1Compat"===(b.compatMode||""),g=g?e.pageYOffset:c?b.documentElement.scrollTop:b.body.scrollTop,g=parseInt(g,10),c=parseInt,d="CSS1Compat"===b.compatMode?b.documentElement:b.body,d=d.clientHeight,g=g+c(d,10),h;for(h in f)if(g>f[h]&&!u[h])if(u[h]=!0,c=h,d=e.GoogleAnalyticsObject,"undefined"===typeof e[a.dataLayerName]||a.forceSyntax)if("function"===typeof e[d]&&"function"===typeof e[d].getAll&&2!==a.forceSyntax)e[d]("send","event",a.category,c,a.label,{nonInteraction:1});
+else"undefined"!==typeof e._gaq&&1!==a.forceSyntax&&e._gaq.push(["_trackEvent",a.category,c,a.label,0,!0]);else e[a.dataLayerName].push({event:"scrollTracking",attributes:{distance:c,label:a.label}})}function t(f){if("number"===typeof f||parseInt(f,10))return parseInt(f,10);try{var a=1===f.nodeType?f:b.querySelector(f),c=b.body.getBoundingClientRect().top,d=Math.floor(a.getBoundingClientRect().top-c);return d}catch(e){}}function v(a,g){var c,d,b,e=null,h=0,l=function(){h=new Date;e=null;b=a.apply(c,
+d)};return function(){var k=new Date;h||(h=k);var m=g-(k-h);c=this;d=arguments;0>=m?(clearTimeout(e),e=null,h=k,b=a.apply(c,d)):e||(e=setTimeout(l,m));return b}}function k(a,b,c){if(a.addEventListener)a.addEventListener(b,c);else if(a.attachEvent)a.attachEvent("on"+b,function(b){c.call(a,b)});else if("undefined"===typeof a["on"+b]||null===a["on"+b])a["on"+b]=function(b){c.call(a,b)}}var u={};"loading"!==b.readyState?l():b.addEventListener?k(b,"DOMContentLoaded",l):k(e,"load",l)})(document,window,
+{forceSyntax:!1,dataLayerName:!1,distances:{percentages:{each:[10,90],every:25},pixels:{each:[],every:null}},top:null,bottom:null,category:"ScrollTracking",label:document.location.pathname});</script></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1703904396493835");fbq("track","PageView");</script>
+<noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1703904396493835&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
+
+<script type="text/javascript" id="" src="./default_files/oct.js"></script><script type="text/javascript" id="">_linkedin_data_partner_id="15020";</script><script type="text/javascript" id="">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.8616873951914086"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.28178426361691633" width="0" height="0" alt="" src="./default_files/0"></div>
+<script type="text/javascript" id="">twttr.conversion.trackPid("nuwe7",{tw_sale_amount:0,tw_order_quantity:0});</script>
+<noscript>
+&lt;img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nuwe7&amp;amp;p_id=Twitter&amp;amp;tw_sale_amount=0&amp;amp;tw_order_quantity=0"&gt;
+&lt;img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nuwe7&amp;amp;p_id=Twitter&amp;amp;tw_sale_amount=0&amp;amp;tw_order_quantity=0"&gt;
+</noscript>
+<script src="./default_files/saved_resource" type="text/javascript"></script><script src="./default_files/adsct" type="text/javascript"></script><img src="./default_files/seg" width="1" height="1" border="0" alt="" style="display: none;"></body></html>
