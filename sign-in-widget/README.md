@@ -1,3 +1,8 @@
+---
+layout: default
+title: Code Snippets
+---
+
 # Code Snippets
 
 ## To get files
