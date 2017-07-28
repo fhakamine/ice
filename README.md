@@ -5,4 +5,4 @@ title: Ice Assets
 
 # Ice Assets
 
-For a sweet life.
+For a super sweet life.
